@@ -33,7 +33,7 @@ bool infrared_scene_universal_on_event(void* context, SceneManagerEvent event) {
 
     if(event.type == SceneManagerEventTypeCustom) {
         if(event.event == SubmenuIndexUniversalTV) {
-            scene_manager_next_scene(scene_manager, InfraredSceneUniversalTV);
+            scene_manager_next_scene(scene_manager, InfraredSceneUniversalTVSelect);
             consumed = true;
         } else if(event.event == SubmenuIndexUniversalAudio) {
             //TODO Implement Audio universal remote
